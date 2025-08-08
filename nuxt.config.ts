@@ -16,7 +16,10 @@ export default defineNuxtConfig({
   // Configuration pour le déploiement
   app: {
     head: {
-      title: 'Tic Tac Toe - Jeu en ligne',
+      title: 'Tic Tac Toe - Le jeu classique revisité',
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+      ],
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

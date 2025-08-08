@@ -3,9 +3,26 @@
     <div class="w-full max-w-7xl relative z-10">
       <!-- En-tête principal -->
       <div class="text-center mb-16 -mt-8">
+        <!-- Logo Tic Tac Toe -->
+        <!-- <div class="flex justify-center mb-6">
+          <div class="grid grid-cols-3 gap-2 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-cyan-400 border border-cyan-400/30">🔵</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-pink-400 border border-pink-400/30">🔴</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-cyan-400 border border-cyan-400/30">🔵</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-pink-400 border border-pink-400/30">🔴</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-cyan-400 border border-cyan-400/30">🔵</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-pink-400 border border-pink-400/30">🔴</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-pink-400 border border-pink-400/30">🔴</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-cyan-400 border border-cyan-400/30">🔵</div>
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-lg flex items-center justify-center text-2xl font-black text-pink-400 border border-pink-400/30">🔴</div>
+          </div>
+        </div> -->
         <h1 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-400 animate-pulse">
           TIC TAC TOE
         </h1>
+        <!-- <div class="text-2xl text-white/80 mt-2 font-medium">
+          Le jeu classique revisité
+        </div> -->
       </div>
 
       <!-- Section principale du jeu -->
