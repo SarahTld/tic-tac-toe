@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   // Configuration pour GitHub Pages
   ssr: false, // SPA mode pour GitHub Pages
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/tic-tac-toe/' : '/',
+    baseURL: '/',
     head: {
       title: 'Tic Tac Toe - Le jeu classique revisité',
       link: [
