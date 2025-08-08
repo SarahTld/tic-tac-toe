@@ -1,11 +1,7 @@
 {
-  "name": "tic-tac-toe",
+  "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=9.0.0"
-  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

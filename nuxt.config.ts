@@ -4,18 +4,6 @@ export default defineNuxtConfig({
   
   // Configuration pour GitHub Pages
   ssr: false, // SPA mode pour GitHub Pages
-  nitro: {
-    prerender: {
-      routes: ['/']
-    }
-  },
-  
-  // Configuration pour éviter les problèmes de modules natifs
-  vite: {
-    optimizeDeps: {
-      exclude: ['oxc-parser']
-    }
-  },
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/tic-tac-toe/' : '/',
     head: {
