@@ -1,11 +1,21 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   
+  // Configuration pour le déploiement statique
+  ssr: false,
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
+  
   // Configuration pour GitHub Pages
-  ssr: false, // SPA mode pour GitHub Pages
   app: {
-    baseURL: '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/tic-tac-toe/' : '/',
+    buildAssetsDir: '/assets/',
     head: {
       title: 'Tic Tac Toe - Le jeu classique revisité',
       link: [
