@@ -5,12 +5,12 @@
         v-for="(cell, index) in board"
         :key="index"
         @click="$emit('move', index)"
-        :disabled="cell !== null || gameOver"
+        :disabled="cell !== '' || gameOver"
         class="w-20 h-20 bg-white/20 hover:bg-white/30 disabled:hover:bg-white/20 rounded-xl flex items-center justify-center text-3xl font-black transition-all duration-300 transform hover:scale-105 disabled:transform-none"
         :class="{
           'text-cyan-400': cell === 'X',
           'text-pink-400': cell === 'O',
-          'animate-bounce': cell !== null
+          'animate-bounce': cell !== ''
         }"
       >
         {{ cell === 'X' ? '🔵' : cell === 'O' ? '🔴' : '' }}
