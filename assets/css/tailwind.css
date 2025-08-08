@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles personnalisés */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Animation pour les cases du jeu */
+.cell-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.cell-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Animation pour les victoires */
+@keyframes celebrate {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.celebrate {
+  animation: celebrate 0.5s ease-in-out;
+}

@@ -1,0 +1,62 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glass" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.1 0"/>
+    </filter>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="pinkBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background glassmorphism -->
+  <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.1)" filter="url(#glass)"/>
+  <rect width="32" height="32" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  
+  <!-- Grid container -->
+  <g transform="translate(4, 4)">
+    <!-- Ligne 1: cyan-pink-cyan -->
+    <rect x="0" y="0" width="6" height="6" rx="2" fill="url(#cyanGradient)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <rect x="8" y="0" width="6" height="6" rx="2" fill="url(#pinkGradient)" stroke="url(#pinkBorder)" stroke-width="1"/>
+    <rect x="16" y="0" width="6" height="6" rx="2" fill="url(#cyanGradient)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    
+    <!-- Ligne 2: pink-cyan-pink -->
+    <rect x="0" y="8" width="6" height="6" rx="2" fill="url(#pinkGradient)" stroke="url(#pinkBorder)" stroke-width="1"/>
+    <rect x="8" y="8" width="6" height="6" rx="2" fill="url(#cyanGradient)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <rect x="16" y="8" width="6" height="6" rx="2" fill="url(#pinkGradient)" stroke="url(#pinkBorder)" stroke-width="1"/>
+    
+    <!-- Ligne 3: pink-cyan-pink -->
+    <rect x="0" y="16" width="6" height="6" rx="2" fill="url(#pinkGradient)" stroke="url(#pinkBorder)" stroke-width="1"/>
+    <rect x="8" y="16" width="6" height="6" rx="2" fill="url(#cyanGradient)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <rect x="16" y="16" width="6" height="6" rx="2" fill="url(#pinkGradient)" stroke="url(#pinkBorder)" stroke-width="1"/>
+    
+    <!-- Emoji symbols - exactement comme le logo -->
+    <!-- Ligne 1: 🔵🔴🔵 -->
+    <text x="3" y="9" font-size="6" fill="#22d3ee" text-anchor="middle" dominant-baseline="middle">🔵</text>
+    <text x="11" y="9" font-size="6" fill="#ec4899" text-anchor="middle" dominant-baseline="middle">🔴</text>
+    <text x="19" y="9" font-size="6" fill="#22d3ee" text-anchor="middle" dominant-baseline="middle">🔵</text>
+    
+    <!-- Ligne 2: 🔴🔵🔴 -->
+    <text x="3" y="17" font-size="6" fill="#ec4899" text-anchor="middle" dominant-baseline="middle">🔴</text>
+    <text x="11" y="17" font-size="6" fill="#22d3ee" text-anchor="middle" dominant-baseline="middle">🔵</text>
+    <text x="19" y="17" font-size="6" fill="#ec4899" text-anchor="middle" dominant-baseline="middle">🔴</text>
+    
+    <!-- Ligne 3: 🔴🔵🔴 -->
+    <text x="3" y="25" font-size="6" fill="#ec4899" text-anchor="middle" dominant-baseline="middle">🔴</text>
+    <text x="11" y="25" font-size="6" fill="#22d3ee" text-anchor="middle" dominant-baseline="middle">🔵</text>
+    <text x="19" y="25" font-size="6" fill="#ec4899" text-anchor="middle" dominant-baseline="middle">🔴</text>
+  </g>
+</svg>
