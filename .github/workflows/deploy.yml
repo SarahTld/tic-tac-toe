@@ -29,6 +29,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add dist -f
+        git add .output/public -f
         git commit -m "Deploy to gh-pages"
         git push origin HEAD:gh-pages --force
