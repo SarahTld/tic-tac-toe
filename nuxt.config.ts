@@ -9,6 +9,13 @@ export default defineNuxtConfig({
       routes: ['/']
     }
   },
+  
+  // Configuration pour éviter les problèmes de modules natifs
+  vite: {
+    optimizeDeps: {
+      exclude: ['oxc-parser']
+    }
+  },
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/tic-tac-toe/' : '/',
     head: {
