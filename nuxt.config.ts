@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   
   // Configuration pour GitHub Pages
   ssr: false, // SPA mode pour GitHub Pages
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
   app: {
     baseURL: '/',
     head: {
