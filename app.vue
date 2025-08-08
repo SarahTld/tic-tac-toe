@@ -2,8 +2,8 @@
   <div class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center p-6 relative overflow-hidden">
     <div class="w-full max-w-7xl relative z-10">
       <!-- En-tête principal -->
-      <div class="text-center mb-16">
-        <h1 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-400 mb-3 animate-pulse">
+      <div class="text-center mb-16 -mt-8">
+        <h1 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-400 animate-pulse">
           TIC TAC TOE
         </h1>
       </div>
@@ -19,7 +19,7 @@
               @click="resetGame"
               class="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white py-3 px-4 rounded-xl font-bold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/50"
             >
-              🆕 Nouvelle partie
+              Nouvelle partie
             </button>
           </div>
 
@@ -100,13 +100,6 @@
               <div v-else class="space-y-3">
                 <div class="text-2xl font-bold text-white">
                   {{ currentPlayer === 'X' ? '🔵 Votre tour' : '🔴 Tour de l\'IA' }}
-                </div>
-                <!-- Barre de progression -->
-                <div class="w-full bg-gray-700 rounded-full h-3">
-                  <div 
-                    class="bg-gradient-to-r from-cyan-400 to-purple-400 h-3 rounded-full transition-all duration-500"
-                    :style="{ width: `${(movesCount / 9) * 100}%` }"
-                  ></div>
                 </div>
               </div>
             </div>
@@ -198,6 +191,17 @@
         </div>
       </div>
     </div>
+    
+    <!-- Footer -->
+    <footer class="fixed left-0 right-0 bottom-0 z-20 text-white text-sm flex flex-col items-center bg-transparent pointer-events-auto mb-8 mt-8">
+      <div>
+        Développé avec <span class="text-pink-500">❤️</span> par
+        <a href="https://github.com/SarahTld" target="_blank" rel="noopener" class="text-purple-600 font-semibold hover:underline">Sarah T</a>.
+      </div>
+      <div>
+        &copy; 2025 - Tic Tac Toe. Tous droits réservés.
+      </div>
+    </footer>
   </div>
 </template>
 
