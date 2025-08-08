@@ -134,42 +134,12 @@ npm run preview
 
 ## 🔧 Configuration
 
-### Variables d'environnement
-Aucune variable d'environnement requise pour le moment.
-
 ### Personnalisation
 Les couleurs et styles peuvent être modifiés dans :
 - `assets/css/tailwind.css` : Styles personnalisés
 - `tailwind.config.js` : Configuration Tailwind
 - `app.vue` : Interface principale
 - `public/favicon.svg` : Favicon personnalisé
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Fork le projet
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🚀 Améliorations futures
-
-- [x] IA plus intelligente (algorithme minimax)
-- [x] Différents niveaux de difficulté
-- [x] Interface moderne avec glassmorphism
-- [x] Logo et favicon personnalisés
-- [ ] Mode multijoueur en ligne
-- [ ] Animations de victoire plus élaborées
-- [ ] Sons et effets audio
-- [ ] Mode tournoi
-- [ ] Sauvegarde en ligne
-- [ ] Thèmes de couleurs personnalisables
 
 ---
 
